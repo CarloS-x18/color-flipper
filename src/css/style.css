@@ -116,7 +116,7 @@ a {
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 3px;
-    background-color: white;
+    background-color: transparent;
 }
 .main__button:hover {
     background-color: var(--cardColor);
