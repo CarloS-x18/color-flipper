@@ -1,0 +1,127 @@
+:root {
+    --font: 'Noto Sans JP', sans-serif;;
+    --colorPrincipal: #11b8ff;
+    --cardColor: #171717;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+
+/* Globales */
+body {
+    font-family: var(--font);
+    height: 100vh;
+}
+h1, h2, h3 {
+    margin: 0;
+}
+p {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/*Header*/
+.header {
+    background-color: white;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    height: 12%;
+}
+.header__nav {
+    margin: 0 auto;
+    width: 60%;
+    height: 100%;
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__title {
+    font-size: 2rem;
+    color: var(--colorPrincipal);
+    letter-spacing: 2px;
+}
+.nav__link {
+    margin-right: 1rem;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+}
+.nav__link--blue {
+    color: var(--colorPrincipal);
+}
+.nav__link:last-of-type {
+    margin-right: 0;
+}
+@media (max-width: 570px) {
+    .header {
+        height: 20%;
+    }
+    .header__title {
+        margin-bottom: 3rem;
+    }
+    .header__nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+/* main */
+.main {
+    height: 88%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main__card {
+    background-color: var(--cardColor);
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1.5rem 0;
+    width: 50rem;
+}
+.main__title {
+    font-size: 3.4rem;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+.color {
+    font-size: 3.4rem;
+    color: cyan;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+.main__button {
+    margin-top: 4rem;
+    border: none;
+    padding: 1rem 3rem;
+    font-family: var(--font);
+    font-size: 1.8rem; 
+    border: solid 2px var(--cardColor);
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    background-color: white;
+}
+.main__button:active {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
